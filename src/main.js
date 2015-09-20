@@ -1,9 +1,9 @@
 import angular from 'angular';
 import angularRoute from 'angular-route';
-import masteries from 'yubin-angular-league-masteries';
+import masteries from 'angular-lol-masteries';
 import masteriesTemplate from './masteries.tpl.html';
 
-angular.module('yubin-angular-league-showcase', [
+angular.module('angular-lol-showcase', [
     'ng',
     angularRoute,
     masteries.name
