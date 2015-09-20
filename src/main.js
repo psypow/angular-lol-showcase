@@ -1,7 +1,7 @@
 import angular from 'angular';
 import angularRoute from 'angular-route';
 import masteriesModule from 'angular-lol-masteries';
-import masteriesViewTemplate from './masteries.tpl.html';
+import masteriesViewTemplate from './masteriesViewTemplate.tpl.html';
 angular.module('angular-lol-showcase', [
     'ng',
     angularRoute,
@@ -11,8 +11,15 @@ angular.module('angular-lol-showcase', [
 
     $routeProvider.when('/masteries', {
         template: masteriesViewTemplate,
-        controller: function (masteriesData) {
-
+        controller: function ($scope, masteriesData) {
+            $scope.summonerMasteries = {
+                "4111":{
+                    rank:2
+                },
+                "4112":{
+                    rank:1
+                }
+            };
         }
     });
 });
