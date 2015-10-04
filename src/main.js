@@ -18,6 +18,12 @@ angular.module('angular-lol-showcase', [
                 },
                 "4112": {
                     rank: 2
+                },
+                "4133" : {
+                    rank:1
+                },
+                "4151" : {
+                    rank:1
                 }
             };
         }

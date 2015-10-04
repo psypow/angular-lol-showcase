@@ -1,3 +1,14 @@
-<h1>masteries templates</h1>
-<h2>static-masteries directive</h2>
-<static-masteries summoner-masteries="summonerMasteries"></static-masteries>
+<div>
+    <h1>masteries templates</h1>
+
+    <h2>static-masteries directive</h2>
+    <static-masteries summoner-masteries="summonerMasteries"></static-masteries>
+
+    <h2>static-masteries directive with hidden slots</h2>
+    <static-masteries static-masteries-options="{hideSlots:true}"
+                      summoner-masteries="summonerMasteries"></static-masteries>
+
+    <h2>static-masteries directive hiding unselected masteries</h2>
+    <static-masteries static-masteries-options="{hideUnselectedMasteries:true, hideSlots:true}"
+                      summoner-masteries="summonerMasteries"></static-masteries>
+</div>
