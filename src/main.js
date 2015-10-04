@@ -11,13 +11,13 @@ angular.module('angular-lol-showcase', [
 
     $routeProvider.when('/masteries', {
         template: masteriesViewTemplate,
-        controller: function ($scope, masteriesData) {
+        controller: function ($scope) {
             $scope.summonerMasteries = {
-                "4111":{
-                    rank:2
+                "4111": {
+                    rank: 1
                 },
-                "4112":{
-                    rank:1
+                "4112": {
+                    rank: 2
                 }
             };
         }
